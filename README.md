@@ -3,16 +3,18 @@
 
 - Create React App
 - Configured TailwindCSS
+- Header
+- Sign up Form
 
 
 
 # Features
 - Login/Sign Up
-  - sign In / Sign up Form
+  - Sign In / Sign up Form
   - redirect to Browse Page
 - Browse (after authentication)
   - Header
-  - Main movie
+  - Main Movie
     - Trailer in Background
     - Title & Description
     - MovieSuggestions
