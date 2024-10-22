@@ -6,7 +6,7 @@ import {auth} from "../utils/firebase";
 
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { USER_AVATAR } from "../utils/constants";
+import { BG_URL, USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
    const [isSignInForm, setIsSignInForm] = useState(true);
@@ -21,11 +21,10 @@ const Login = () => {
    const handleButtonClick = () => {
       // Validate the form data
      // checkValidData(email,password);
-     //console.log(email.current.value);
-     //console.log(password.current.value);
+     
 
       const message = checkValidData(email.current.value,password.current.value);
-      //console.log(message);
+      
       setErrorMessage(message);
       if(message) return;
       if(!isSignInForm){
@@ -57,7 +56,7 @@ const Login = () => {
                // ...
                setErrorMessage(error.message);
              });
-            console.log(user);
+        
             
         })
         .catch((error) => {
@@ -71,7 +70,7 @@ const Login = () => {
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-   // console.log(user);
+   
     
   })
   .catch((error) => {
@@ -92,7 +91,7 @@ const Login = () => {
        <Header />
        <div className="absolute">
          <img
-            src="https://i.redd.it/zjgs096khv591.jpg" 
+            src={BG_URL} 
             alt="logo"
          />
        </div>
