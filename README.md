@@ -7,7 +7,7 @@
 - Header
 - Login Form
 - Sign up Form
-- Form Validation
+- Form Validation - Formic
 - useRef Hook
 - Firebase Setup
 - Deploying our app to production
